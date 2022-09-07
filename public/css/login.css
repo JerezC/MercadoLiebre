@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin: 0;
+}
+
+h2 {   
+    color: #666;
+    font-size: 3vw;
+}
+
+img {
+    display: block;
+    width: 50vw;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+.buscador {
+    width: 40%;
+    height: 6vh;
+    border: none;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+
+.info {
+    width: 100%;
+    text-align: center;
+}
+
+.main-header ul {
+    padding: 0;
+}
+ 
+
+.hamburguer-button {
+    background-color: #1259c3;
+    color: #fff;
+    display: block;
+    padding: 8px 0;
+    border-radius: 10%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+}
+
+.main-footer {       
+    background-color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.main-footer h3,
+.main-footer p {
+    color: #666;
+}
+
+.main-footer p {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.main-footer h3 {
+    margin-bottom: 0;
+}
+.main-footer i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer a:hover i {
+    color: #666;
+}
+
+.copy {
+    background-color: #fff;
+    color: #666;
+    width: 90vw;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.main-container {
+    width: 90vw;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container h3 {
+    text-align: center;
+}
+.formulario {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.formulario input {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.formulario button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:#1259c3;
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.formulario > label {
+    font-weight: 900;
+}
+
+
+
+@media (min-width:750px) {
+    
+    .hamburguer-button {
+        display: none;
+    }
+    
+    .main-header {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info {
+        width: 35vw;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 25vw;
+    }
+
+    .buscador {
+        width: 33vw;
+        height: 4vh;
+    }
+
+    .listas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 40%;
+        margin: 24px 0 0 0;
+    }
+    
+    img {
+        width: 90%;
+    }    
+
+    .main-container {
+        width: 70%;
+    }
+
+    .copy {
+        width: 90vw;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        margin-bottom: 0;
+        
+    }
+
+
+}
+
+@media (min-width:900px) {
+
+    .info {
+        width: 30%;
+    }
+
+    .logo {
+        width: 20vw;
+    }
+
+
+    .listas {
+        width: 30%;
+    }
+
+    .main-footer {
+        
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 90vw;
+        position: absolute;
+        bottom: 1vh;
+        right: 5vw;
+
+    }    
+
+    .copy {
+        position: absolute;
+        bottom: 0;
+        right: 5vw;
+    }
+
+    .footer {
+        width: 28%;
+        margin: 0;
+    }
+
+}
